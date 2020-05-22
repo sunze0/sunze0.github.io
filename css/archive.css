@@ -19,14 +19,14 @@
   padding-left: 10px;
   font-size: 30px;
   font-weight: bold;
-  color: theme_color;
+  color: #808080;
   font-family: theme_font_family;
 }
 #archive-inter a {
   display: flex;
   align-items: center;
   height: 40px;
-  color: theme_color;
+  color: #808080;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
