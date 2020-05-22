@@ -1,639 +1,216 @@
-<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+<!doctype html>
 <html lang="en">
+
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" 
+src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js">
+</script>
+<link href=  "/plugins/code-theme/tomorrow.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="/plugins/github-markdown.css">
+
 <head>
-
-    <!--[if lt IE 9]>
-        <style>body {display: none; background: none !important} </style>
-        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
-    <![endif]-->
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="format-detection" content="telephone=no" />
-<meta name="author" content="简单快乐婷" />
-
-
+  <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
+  
     
     
-
-
-<meta name="description" content="这里写点什么好呢">
-<meta property="og:type" content="website">
-<meta property="og:title" content="简单快乐婷">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="简单快乐婷">
-<meta property="og:description" content="这里写点什么好呢">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="简单快乐婷">
-<meta name="twitter:card" content="summary">
-
-<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
-
-
-    <link rel="alternate" href="/atom.xml" title="简单快乐婷" type="application/atom+xml">
-
-
-
-    <link rel="shortcut icon" href="/favicon.png">
-
-
-
-    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
-
-
-
-    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
-
-
-
-    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
-
-
-
-<link rel="stylesheet" href="/css/style.css">
-
-
-
-    <style> .article { opacity: 0;} </style>
-
-
-<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
-
-<title>简单快乐婷</title>
-
-<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
-<script>
-    var yiliaConfig = {
-        fancybox: true,
-        animate: true,
-        isHome: true,
-        isPost: false,
-        isArchive: false,
-        isTag: false,
-        isCategory: false,
-        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
-        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: 
-    }
-</script>
-
-
-    <script> yiliaConfig.jquery_ui = [false]; </script>
-
-
-
-    <script> yiliaConfig.rootUrl = "\/";</script>
-
-
-
-
-
-
+      <link rel="stylesheet" href="/css/legend.css">
+    
+  
 <meta name="generator" content="Hexo 4.2.1"></head>
-<body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        <a href="/" class="profilepic">
-            <img src="/img/test.png" class="animated zoomIn">
-        </a>
-        <hgroup>
-          <h1 class="header-author"><a href="/">简单快乐婷</a></h1>
-        </hgroup>
 
-        
-
-        
-
-
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>Menu</li>
-                        <li>Tags</li>
-                        
-                        <li>Friends</li>
-                        
-                        
-                        <li>About Me</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        
-
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a href="/archives/">主页</a></li>
-                        
-                            <li><a href="/archives/">所有文章</a></li>
-                        
-                            <li><a href="/tags/">标签云</a></li>
-                        
-                            <li><a href="/about/">关于我</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" href="/760562706@qq.com" title="Email"></a>
-                            
-                                <a class="fa GitHub" href="#" title="GitHub"></a>
-                            
-                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/" target="_blank" rel="noopener">GitHub</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/" target="_blank" rel="noopener">MOxFIVE</a>
-                    
-                    </div>
-                </section>
-                
-
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">专注于前端</div>
-                </section>
-                
-            </div>
-        </div>
-    </header>                
-</div>
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">简单快乐婷</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                <img src="/img/test.png" class="animated zoomIn">
-            </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">简单快乐婷</a></h1>
-            </hgroup>
-            
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/archives/">主页</a></li>
-                
-                    <li><a href="/archives/">所有文章</a></li>
-                
-                    <li><a href="/tags/">标签云</a></li>
-                
-                    <li><a href="/about/">关于我</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" target="_blank" href="/760562706@qq.com" title="Email"></a>
-                            
-                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
-                            
-                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
-                            
-                        </ul>
-            </nav>
-        </header>                
-    </div>
-    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
-</nav>
-      <div class="body-wrap">
-  
-    <article id="post-hexo +guihub（上）" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2020/05/22/hexo%20+guihub%EF%BC%88%E4%B8%8A%EF%BC%89/" class="article-date">
-      <time datetime="2020-05-22T06:59:45.057Z" itemprop="datePublished">2020-05-22</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
+<body id="body-home-bg">
+<div id="layout-content">
+  <div id="menu-outer-home">
+  <div id="menu-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/hexo%20+guihub%EF%BC%88%E4%B8%8A%EF%BC%89/">hexo +guihub（上）</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h1 id="记录hexo-guihub"><a href="#记录hexo-guihub" class="headerlink" title="记录hexo +guihub"></a>记录hexo +guihub</h1><h2 id="智商低于50以下的人不会去做这个动作"><a href="#智商低于50以下的人不会去做这个动作" class="headerlink" title="智商低于50以下的人不会去做这个动作"></a>智商低于50以下的人不会去做这个动作</h2><h3 id="公众号搜索简单江湖，和我对线solo"><a href="#公众号搜索简单江湖，和我对线solo" class="headerlink" title="公众号搜索简单江湖，和我对线solo"></a>公众号搜索简单江湖，和我对线solo</h3><h4 id="那么我们准备开始了"><a href="#那么我们准备开始了" class="headerlink" title="那么我们准备开始了"></a>那么我们准备开始了</h4><h5 id="第一步安装nodejs"><a href="#第一步安装nodejs" class="headerlink" title="第一步安装nodejs"></a>第一步安装nodejs</h5><p>打开百度，选择合适的版本进行下载</p>
-<h3 id="这一步无法完成，请退出本文，谢谢"><a href="#这一步无法完成，请退出本文，谢谢" class="headerlink" title="这一步无法完成，请退出本文，谢谢!"></a>这一步无法完成，请退出本文，谢谢!</h3><h4 id="第二步，打开百度下载git，一路next即可"><a href="#第二步，打开百度下载git，一路next即可" class="headerlink" title="第二步，打开百度下载git，一路next即可"></a>第二步，打开百度下载git，一路next即可</h4><h4 id="那么我们可以尝试开始了"><a href="#那么我们可以尝试开始了" class="headerlink" title="那么我们可以尝试开始了"></a>那么我们可以尝试开始了</h4><h5 id="安装hexo-这个下载速度还是很快的"><a href="#安装hexo-这个下载速度还是很快的" class="headerlink" title="安装hexo,这个下载速度还是很快的"></a>安装hexo,这个下载速度还是很快的</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry http:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;</span><br></pre></td></tr></table></figure>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
-<h3 id="相信到这一步，已经劝退不少了，继续"><a href="#相信到这一步，已经劝退不少了，继续" class="headerlink" title="相信到这一步，已经劝退不少了，继续"></a>相信到这一步，已经劝退不少了，继续</h3><p>打开你的D盘，建立一个文件夹命名为test，别问，问就报错。<br>然后，鼠标右键，选择GIT bash here<br>恭喜，成功距离你还很远。</p>
-<h4 id="go-on"><a href="#go-on" class="headerlink" title="go on"></a>go on</h4><p>选择一个空的目录，右键git bash here在这里打开git bash ，然后输入 hexo init 命令生成一个hexo仓库：</p>
-<h5 id="懒惰再召唤我，啊，好想睡觉。"><a href="#懒惰再召唤我，啊，好想睡觉。" class="headerlink" title="懒惰再召唤我，啊，好想睡觉。"></a>懒惰再召唤我，啊，好想睡觉。</h5><p>输入npm install 安装所需要的组件：</p>
-<h3 id="反正会生成一堆文件，实际意义不大，等着就行"><a href="#反正会生成一堆文件，实际意义不大，等着就行" class="headerlink" title="反正会生成一堆文件，实际意义不大，等着就行"></a>反正会生成一堆文件，实际意义不大，等着就行</h3><p>现在基本成功一半了<br>输入hexo g<br>部署一遍所以的文件<br>输入<br>hexo s<br>启动本地服务，粘贴复制<br>local：4000到浏览器，本地的博客就算搭建完成了，不行了，我要睡觉休息了，剩下的再更新。</p>
-
-      
+    <div id="site-title">
+      简单快乐婷
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
 
-      
-      
-      <div class="clearfix"></div>
-    </div>
+     
+    <div>
     
+      
+      <a href="/">首页</a>
+      
+    
+      
+      <a href="/archives">归档</a>
+      
+    
+    </div>
   </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-销售的罪" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2020/05/21/%E9%94%80%E5%94%AE%E7%9A%84%E7%BD%AA/" class="article-date">
-      <time datetime="2020-05-21T15:16:04.987Z" itemprop="datePublished">2020-05-21</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/%E9%94%80%E5%94%AE%E7%9A%84%E7%BD%AA/">销售的罪</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>title: 销售者的原罪<br>销售之苦</p>
-<h2 id="销售不是人"><a href="#销售不是人" class="headerlink" title="销售不是人"></a>销售不是人</h2><p>销售没有上下班的时间</p>
-<h2 id="辅导老师销售就更加辛苦了"><a href="#辅导老师销售就更加辛苦了" class="headerlink" title="辅导老师销售就更加辛苦了"></a>辅导老师销售就更加辛苦了</h2><p>撤销：<kbd>Ctrl/Command</kbd> + <kbd>Z</kbd><br>重做：<kbd>Ctrl/Command</kbd> + <kbd>Y</kbd><br>加粗：<kbd>Ctrl/Command</kbd> + <kbd>B</kbd><br>斜体：<kbd>Ctrl/Command</kbd> + <kbd>I</kbd><br>标题：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd><br>无序列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd><br>有序列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd><br>检查列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd><br>插入代码：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd><br>插入链接：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd><br>插入图片：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd><br>查找：<kbd>Ctrl/Command</kbd> + <kbd>F</kbd><br>替换：<kbd>Ctrl/Command</kbd> + <kbd>G</kbd></p>
-<h2 id="合理的创建标题，有助于目录的生成"><a href="#合理的创建标题，有助于目录的生成" class="headerlink" title="合理的创建标题，有助于目录的生成"></a>合理的创建标题，有助于目录的生成</h2><p>直接输入1次<kbd>#</kbd>，并按下<kbd>space</kbd>后，将生成1级标题。<br>输入2次<kbd>#</kbd>，并按下<kbd>space</kbd>后，将生成2级标题。<br>以此类推，我们支持6级标题。有助于使用<code>TOC</code>语法后生成一个完美的目录。</p>
-<h2 id="如何改变文本的样式"><a href="#如何改变文本的样式" class="headerlink" title="如何改变文本的样式"></a>如何改变文本的样式</h2><p><em>强调文本</em> <em>强调文本</em></p>
-<p><strong>加粗文本</strong> <strong>加粗文本</strong></p>
-<p>==标记文本==</p>
-<p><del>删除文本</del></p>
-<blockquote>
-<p>引用文本</p>
-</blockquote>
-<p>H<del>2</del>O is是液体。</p>
-<p>2^10^ 运算结果是 1024.</p>
-<h2 id="插入链接与图片"><a href="#插入链接与图片" class="headerlink" title="插入链接与图片"></a>插入链接与图片</h2><p>链接: <a href="https://www.csdn.net/" target="_blank" rel="noopener">link</a>.</p>
-<p>图片: <img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hdmF0YXIuY3Nkbi5uZXQvNy83L0IvMV9yYWxmX2h4MTYzY29tLmpwZw" alt="Alt"></p>
-<p>带尺寸的图片: ![Alt](<a href="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hdmF0YXIuY3Nkbi5uZXQvNy83L0IvMV9yYWxmX2h4MTYzY29tLmpwZw" target="_blank" rel="noopener">https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hdmF0YXIuY3Nkbi5uZXQvNy83L0IvMV9yYWxmX2h4MTYzY29tLmpwZw</a> =30x30)</p>
-<p>居中的图片: <img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hdmF0YXIuY3Nkbi5uZXQvNy83L0IvMV9yYWxmX2h4MTYzY29tLmpwZw#pic_center" alt="Alt"></p>
-<p>居中并且带尺寸的图片: ![Alt](<a href="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hdmF0YXIuY3Nkbi5uZXQvNy83L0IvMV9yYWxmX2h4MTYzY29tLmpwZw#pic_center" target="_blank" rel="noopener">https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hdmF0YXIuY3Nkbi5uZXQvNy83L0IvMV9yYWxmX2h4MTYzY29tLmpwZw#pic_center</a> =30x30)</p>
-<p>当然，我们为了让用户更加便捷，我们增加了图片拖拽功能。</p>
-<h2 id="如何插入一段漂亮的代码片"><a href="#如何插入一段漂亮的代码片" class="headerlink" title="如何插入一段漂亮的代码片"></a>如何插入一段漂亮的代码片</h2><p>去<a href="https://mp.csdn.net/console/configBlog" target="_blank" rel="noopener">博客设置</a>页面，选择一款你喜欢的代码片高亮样式，下面展示同样高亮的 <code>代码片</code>.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// An highlighted block</span></span><br><span class="line"><span class="keyword">var</span> foo = <span class="string">'bar'</span>;</span><br></pre></td></tr></table></figure>
-
-<h2 id="生成一个适合你的列表"><a href="#生成一个适合你的列表" class="headerlink" title="生成一个适合你的列表"></a>生成一个适合你的列表</h2><ul>
-<li>项目<ul>
-<li>项目<ul>
-<li>项目</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<ol>
-<li>项目1</li>
-<li>项目2</li>
-<li>项目3</li>
-</ol>
-<ul>
-<li><input disabled="" type="checkbox"> 计划任务</li>
-<li><input checked="" disabled="" type="checkbox"> 完成任务</li>
-</ul>
-<h2 id="创建一个表格"><a href="#创建一个表格" class="headerlink" title="创建一个表格"></a>创建一个表格</h2><p>一个简单的表格是这么创建的：<br>项目     | Value<br>——– | —–<br>电脑  | $1600<br>手机  | $12<br>导管  | $1</p>
-<h3 id="设定内容居中、居左、居右"><a href="#设定内容居中、居左、居右" class="headerlink" title="设定内容居中、居左、居右"></a>设定内容居中、居左、居右</h3><p>使用<code>:---------:</code>居中<br>使用<code>:----------</code>居左<br>使用<code>----------:</code>居右<br>| 第一列       | 第二列         | 第三列        |<br>|:———–:| ————-:|:————-|<br>| 第一列文本居中 | 第二列文本居右  | 第三列文本居左 |</p>
-<h3 id="SmartyPants"><a href="#SmartyPants" class="headerlink" title="SmartyPants"></a>SmartyPants</h3><p>SmartyPants将ASCII标点字符转换为“智能”印刷标点HTML实体。例如：<br>|    TYPE   |ASCII                          |HTML<br>|—————-|——————————-|—————————–|<br>|Single backticks|<code>&#39;Isn&#39;t this fun?&#39;</code>            |’Isn’t this fun?’            |<br>|Quotes          |<code>&quot;Isn&#39;t this fun?&quot;</code>            |”Isn’t this fun?”            |<br>|Dashes          |<code>-- is en-dash, --- is em-dash</code>|– is en-dash, — is em-dash|</p>
-<h2 id="创建一个自定义列表"><a href="#创建一个自定义列表" class="headerlink" title="创建一个自定义列表"></a>创建一个自定义列表</h2><dl><dt>Markdown</dt><dd>Text-to-HTML conversion tool</dd></dl><dl><dt>Authors<br>:  John</dt><dd>Luke</dd></dl><h2 id="如何创建一个注脚"><a href="#如何创建一个注脚" class="headerlink" title="如何创建一个注脚"></a>如何创建一个注脚</h2><p>一个具有注脚的文本。<a href="注脚的解释">^2</a></p>
-<h2 id="注释也是必不可少的"><a href="#注释也是必不可少的" class="headerlink" title="注释也是必不可少的"></a>注释也是必不可少的</h2><p>Markdown将文本转换为 HTML。</p>
-<p>*[HTML]:   超文本标记语言</p>
-<h2 id="KaTeX数学公式"><a href="#KaTeX数学公式" class="headerlink" title="KaTeX数学公式"></a>KaTeX数学公式</h2><p>您可以使用渲染LaTeX数学表达式 <a href="https://khan.github.io/KaTeX/" target="_blank" rel="noopener">KaTeX</a>:</p>
-<p>Gamma公式展示 $\Gamma(n) = (n-1)!\quad\forall<br>n\in\mathbb N$ 是通过欧拉积分</p>
-<p>$$<br>\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt,.<br>$$</p>
-<blockquote>
-<p>你可以找到更多关于的信息 <strong>LaTeX</strong> 数学表达式<a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">here</a>.</p>
-</blockquote>
-<h2 id="新的甘特图功能，丰富你的文章"><a href="#新的甘特图功能，丰富你的文章" class="headerlink" title="新的甘特图功能，丰富你的文章"></a>新的甘特图功能，丰富你的文章</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">        dateFormat  YYYY-MM-DD</span><br><span class="line">        title Adding GANTT diagram functionality to mermaid</span><br><span class="line">        section 现有任务</span><br><span class="line">        已完成               :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">        进行中               :active,  des2, 2014-01-09, 3d</span><br><span class="line">        计划一               :         des3, after des2, 5d</span><br><span class="line">        计划二               :         des4, after des3, 5d</span><br></pre></td></tr></table></figure>
-<ul>
-<li>关于 <strong>甘特图</strong> 语法，参考 <a href="https://mermaidjs.github.io/" target="_blank" rel="noopener">这儿</a>,</li>
-</ul>
-<h2 id="UML-图表"><a href="#UML-图表" class="headerlink" title="UML 图表"></a>UML 图表</h2><p>可以使用UML图表进行渲染。 <a href="https://mermaidjs.github.io/" target="_blank" rel="noopener">Mermaid</a>. 例如下面产生的一个序列图：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">张三 -&gt;&gt; 李四: 你好！李四, 最近怎么样?</span><br><span class="line">李四--&gt;&gt;王五: 你最近怎么样，王五？</span><br><span class="line">李四--x 张三: 我很好，谢谢!</span><br><span class="line">李四-x 王五: 我很好，谢谢!</span><br><span class="line">Note right of 王五: 李四想了很长时间, 文字太长了&lt;br&#x2F;&gt;不适合放在一行.</span><br><span class="line"></span><br><span class="line">李四--&gt;&gt;张三: 打量着王五...</span><br><span class="line">张三-&gt;&gt;王五: 很好... 王五, 你怎么样?</span><br></pre></td></tr></table></figure>
-
-<p>这将产生一个流程图。:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[长方形] -- 链接 --&gt; B((圆))</span><br><span class="line">A --&gt; C(圆角长方形)</span><br><span class="line">B --&gt; D&#123;菱形&#125;</span><br><span class="line">C --&gt; D</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>关于 <strong>Mermaid</strong> 语法，参考 <a href="https://mermaidjs.github.io/" target="_blank" rel="noopener">这儿</a>,</li>
-</ul>
-<h2 id="FLowchart流程图"><a href="#FLowchart流程图" class="headerlink" title="FLowchart流程图"></a>FLowchart流程图</h2><p>我们依旧会支持flowchart的流程图：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">flowchat</span><br><span class="line">st&#x3D;&gt;start: 开始</span><br><span class="line">e&#x3D;&gt;end: 结束</span><br><span class="line">op&#x3D;&gt;operation: 我的操作</span><br><span class="line">cond&#x3D;&gt;condition: 确认？</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>关于 <strong>Flowchart流程图</strong> 语法，参考 <a href="http://adrai.github.io/flowchart.js/" target="_blank" rel="noopener">这儿</a>.</li>
-</ul>
-<h2 id="导出与导入"><a href="#导出与导入" class="headerlink" title="导出与导入"></a>导出与导入</h2><h3 id="导出"><a href="#导出" class="headerlink" title="导出"></a>导出</h3><p>如果你想尝试使用此编辑器, 你可以在此篇文章任意编辑。当你完成了一篇文章的写作, 在上方工具栏找到 <strong>文章导出</strong> ，生成一个.md文件或者.html文件进行本地保存。</p>
-<h3 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h3><p>如果你想加载一篇你写过的.md文件，在上方工具栏可以选择导入功能进行对应扩展名的文件导入，<br>继续你的创作。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
+</div> 
+  <div id="content-outer">
+    <div id="content-inner">
       
       
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2020/05/21/hello-world/" class="article-date">
-      <time datetime="2020-05-21T11:09:14.076Z" itemprop="datePublished">2020-05-21</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/hello-world/">Hello World</a>
-    </h1>
   
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
+<video id="bgvideo" autoplay playsinline loop poster=/images/background.png>
+  <source src=http://cdn.calm.com/scenes/scene-Qqkzy9k7Eo.mp4?v=1418162238190 type="video/mp4">
+</video>
 
 
 
 
-
-
-
-
-
-  
-  
+  <div id="play-button" >
+  <img id="play-img" src="/images/playback_play.png"></img>
 </div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                <i class="fa fa-copyright"></i> 
-                2000-2020 简单快乐婷
-            </div>
-            <div class="footer-right">
-                <a href="https://www.bilibili.com/video/BV1ne411W7hw/' target="_blank" rel="noopener") "> B站链接坚持学</a> by 简单快乐婷<i class="fa fa-heart animated infinite pulse"></i>
-            </div>
-        </div>
-        
-            <div class="visit">
-                
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
-                        </span>
-                    </span>
-                
-                
-                    <span>| </span>
-                
-                
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    </span>
-                
-            </div>
-        
-    </div>
-<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1278926103'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1278926103%26online%3D1' type='text/javascript'%3E%3C/script%3E"));</script>
-</footer>
-    </div>
-    
-<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+<audio id="bgaudio" loop="loop" preload="none"> 
+  <source src=http://cdn.calm.com/scenes/scene-Qqkzy9k7Eo.m4a?v=1418162240715 type="audio/mpeg">
+</audio>
 
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 5;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
-        })
-    </script>
-
-
-
-
-
-    <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-});
-
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';                 
-    }       
-});
-</script>
-
-<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-
-<div class="scroll" id="scroll">
-    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
-</div>
 <script>
-    // Open in New Window
-    
-        var oOpenInNew = {
-            
-             title: "a.article-title, .article-more-link a", 
-            
-            
-            
-            
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
-            
-             friends: "#js-friends a", 
-             socail: ".social a" 
-        }
-        for (var x in oOpenInNew) {
-            $(oOpenInNew[x]).attr("target", "_blank");
-        }
-    
+$(document).ready(function(){
+  //播放按钮点击
+  var audio = $("#bgaudio")[0];
+  var img = $("#play-img")[0];
+  $("#play-button").click(function(){ 
+    if (audio.paused || audio.ended) {
+      audio.play();
+      img.src = "/images/playback_pause.png";
+    } else {
+      audio.pause();
+      img.src = "/images/playback_play.png";
+    }
+  });
+});
 </script>
 
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
+
+
+
+<div id="me-button">
+		<img id="play-img" src="/images/me_n.png">
+		</img>
+</div>
+
+<div id="social-div">
+
+
+    
+    
+    <a class="social-a" href="http://weibo.com/3169700852/" target="_blank">
+        <img src="/images/weibo.png">
+    </a>
+    
+
+    
+    
+    <a class="social-a" href="https://github.com/iHongRen" target="_blank">
+        <img src="/images/github.png">
+    </a>
+    
+
+    
+    
+    <a class="social-a" href="https://twitter.com/ihongren" target="_blank">
+        <img src="/images/twitter.png">
+    </a>
+    
+
+
+</div>
+
+
+<div id="about-me">
+  <div id="about-me-inner">
+    <article class="markdown-body"></article>
   </div>
- {% include '_third-party/comments/index.swig' %}
-  <script type="text/javascript" src="/js/src/clicklove.js"></script>
-  <script type="text/javascript" src="/js/src/clicksocialvalue.js"></script>
+</div>
+
+
+<!--[if lt IE 9]>
+<script>
+	document.createElement('video');
+</script>
+<![endif]-->
+
+
+<script>
+
+$(document).ready(function(){
+  //判断是否该显示’关于我‘
+  if( "home_about"  == 'home_about') {
+    $("#about-me").hide(0);
+
+    //加载about(关于)读取文件
+    var s = $('article').html();
+    if (s.length < 2) {
+      var url = window.location.protocol+"//"+window.location.host+"/about/";
+      $.ajax({ 
+          type: "GET", 
+          url: url, 
+          dataType: "html", 
+          success: function (data) { 
+            $('article').html($(data).find('article').html());//解析about的html
+            $("#about-me").css({"visibility": "visible"}).delay(100);
+            $("#about-me").slideToggle('slow');
+          }
+      }); 
+      }
+
+    //个人按钮点击，隐藏和显示关于界面
+    $("#me-button").click(function(){ 
+      $("#social-div").slideToggle();
+      $("#about-me").slideToggle();
+    });
+  }
+});
+</script>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<div id="bottom-outer">
+  
+  <div id="bottom-inner">
+    简单快乐婷 
+    ©2020 |Powered by  
+    <a href="http://hexo.io" target="_blank">Hexo</a> with theme 
+    <a href="https://github.com/iHongRen/legend" target="_blank">legend</a>
+  </div>
+    
+    
+    
+      <a href="/atom.xml">
+      
+      <img src=/images/rss.png height="18" width="18">
+      
+</div> 
+
+
+  
+  
+    <script src="/js/legend.js"></script>
+  
+
+
 </body>
 </html>
+
+
+<script>
+$(window).on('load', function(){
+   $('pre').addClass('prettyprint').attr('style', 'overflow:auto;');
+   prettyPrint();
+ });
+</script>
+
