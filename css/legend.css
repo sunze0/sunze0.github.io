@@ -98,7 +98,7 @@
   font-family: Microsoft Yahei;
 }
 #bottom-inner a {
-  color: #00bfff;
+  color: #8db600;
   text-decoration: none;
 }
 #bottom-inner a:hover {
@@ -125,14 +125,14 @@
   padding-left: 10px;
   font-size: 30px;
   font-weight: bold;
-  color: #808080;
+  color: #6d5aca;
   font-family: Microsoft Yahei;
 }
 #archive-inter a {
   display: flex;
   align-items: center;
   height: 40px;
-  color: #808080;
+  color: #6d5aca;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
@@ -140,7 +140,7 @@
   font-family: Microsoft Yahei;
 }
 #archive-inter a:hover {
-  color: #00bfff;
+  color: #8db600;
   background-color: #f5f5f5;
 }
 #archive-item-time {
