@@ -58,7 +58,7 @@
   font-family: Microsoft Yahei;
 }
 #menu-outer-x {
-  background-color: #9ff;
+  background-color: #9f9;
 }
 #menu-outer-home {
   background: rgba(0,0,0,0);
@@ -125,14 +125,14 @@
   padding-left: 10px;
   font-size: 30px;
   font-weight: bold;
-  color: #9ff;
+  color: #9f9;
   font-family: Microsoft Yahei;
 }
 #archive-inter a {
   display: flex;
   align-items: center;
   height: 40px;
-  color: #9ff;
+  color: #9f9;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
@@ -179,7 +179,7 @@
 }
 #page-prev-next a {
   font-family: Microsoft Yahei;
-  color: #9ff;
+  color: #9f9;
   font-size: 17px;
 }
 #bgvideo {
