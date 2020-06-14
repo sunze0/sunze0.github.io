@@ -1,0 +1,28 @@
+
+pip升级总是失败怎么办
+
+ROR: Could not find a version that satisfies the requirement xlwt (from vers
+
+ions: none)
+
+ERROR: No matching distribution found for xlwt
+
+原因：网络问题或者是pip版本需要更新
+
+pip升级：python -m pip install --upgrade pip
+
+网络问题更换金镜像源：pip install https://pypi.tuna.tsinghua.edu.cn/simple 模块名
+
+按照上述操作后，出现了问题2
+
+报错： ERROR: Cannot unpack file c:\users\admini~1\appdata\local\temp\pip-unpack-uwt0
+
+as\simple (downloaded from c:\users\admini~1\appdata\local\temp\pip-req-build-7m
+
+zbzm, content-type: text/html; charset=utf-8); cannot detect archive format
+
+ERROR: Cannot determine archive format of c:\users\admini~1\appdata\local\temp\p
+
+ip-req-build-7mzbzm
+
+使用以下命令安装成功：pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn 模块名
