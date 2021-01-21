@@ -55,27 +55,30 @@ src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js">
       
       
   <article class="markdown-body">
-    <h2 id="post-title">Hello World
+    <h2 id="post-title">PIP安装失败的原因
        
-        <div id="post-time" datetime="2020-05-21T11:09:14.076Z">
-          2020-05-21
+        <div id="post-time" datetime="2021-01-21T03:09:07.312Z">
+          2021-01-21
         </div>
       
     </h2>
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+    <p>问题1：</p>
+<p>ERROR: Could not find a version that satisfies the requirement xlwt (from vers</p>
+<p>ions: none)</p>
+<p>ERROR: No matching distribution found for xlwt</p>
+<p>原因：网络问题或者是pip版本需要更新</p>
+<p>pip升级：python -m pip install –upgrade pip</p>
+<p>网络问题更换金镜像源：pip install <a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple</a> 模块名</p>
+<p>按照上述操作后，出现了问题2</p>
+<p>报错： ERROR: Cannot unpack file c:\users\admini~1\appdata\local\temp\pip-unpack-uwt0</p>
+<p>as\simple (downloaded from c:\users\admini~1\appdata\local\temp\pip-req-build-7m</p>
+<p>zbzm, content-type: text/html; charset=utf-8); cannot detect archive format</p>
+<p>ERROR: Cannot determine archive format of c:\users\admini~1\appdata\local\temp\p</p>
+<p>ip-req-build-7mzbzm</p>
+<p>使用以下命令安装成功：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```python</span><br><span class="line">pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn 模块名</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+<pre><code></code></pre>
   </article>
 
   
@@ -84,10 +87,12 @@ src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js">
       <div id="page-prev-next">
         
         
-          <a id="page-prev-a" href="/2020/05/22/hexo%20+guihub%EF%BC%88%E4%B8%8A%EF%BC%89/"> ← hexo +guihub（上） </a>
+          <a id="page-prev-a" href="/2021/01/21/%E6%88%91%E4%B9%9F%E4%B8%8D%E7%9F%A5%E9%81%93%E5%9C%A8%E5%B9%B2%E4%BB%80%E4%B9%88/"> ← 我也不知道在干什么 </a>
         
 
         
+        
+          <a id="page-next-a" href="/2021/01/21/hexo%20+guihub%EF%BC%88%E5%BC%80%E5%A7%8B%EF%BC%89/"> hexo +guihub（开始） → </a>
         
       </div>
     
@@ -177,7 +182,7 @@ $(document).ready(function(){
 
   <div id="bottom-inner">
     简单快乐婷 
-    ©2020 |Powered by  
+    ©2021 |Powered by  
     <a href="http://hexo.io" target="_blank">欢迎加微信交流</a> 公众号：简单江湖
     <a href="" target="_blank"></a>
   </div>

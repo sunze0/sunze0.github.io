@@ -58,7 +58,7 @@
   font-family: Microsoft Yahei;
 }
 #menu-outer-x {
-  background-color: #9f9;
+  background-color: #1e90ff;
 }
 #menu-outer-home {
   background: rgba(0,0,0,0);
@@ -98,7 +98,7 @@
   font-family: Microsoft Yahei;
 }
 #bottom-inner a {
-  color: #8db600;
+  color: #adff2f;
   text-decoration: none;
 }
 #bottom-inner a:hover {
@@ -125,14 +125,14 @@
   padding-left: 10px;
   font-size: 30px;
   font-weight: bold;
-  color: #9f9;
+  color: #1e90ff;
   font-family: Microsoft Yahei;
 }
 #archive-inter a {
   display: flex;
   align-items: center;
   height: 40px;
-  color: #9f9;
+  color: #1e90ff;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
@@ -140,7 +140,7 @@
   font-family: Microsoft Yahei;
 }
 #archive-inter a:hover {
-  color: #8db600;
+  color: #adff2f;
   background-color: #f5f5f5;
 }
 #archive-item-time {
@@ -179,7 +179,7 @@
 }
 #page-prev-next a {
   font-family: Microsoft Yahei;
-  color: #9f9;
+  color: #1e90ff;
   font-size: 17px;
 }
 #bgvideo {
